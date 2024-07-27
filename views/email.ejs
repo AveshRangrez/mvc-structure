@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="public/css/style.css">
+
+  <style>
+    .container {
+      max-width: 900px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+    }
+    .box {
+      width: 50%;
+    }
+    textarea {
+    min-height: 130px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1> <<< Avesh Rangrez >>> </h1>
+    </div>
+    <div class="wrapper animated bounceInLeft">
+      <div class="contact">
+        <h3> Email Us </h3>
+        <form method="POST" action="/email">
+          <div class="full">
+            <label>Email Address</label>
+            <input class="box" type="email" id="email" name="email" required />
+          </div>
+          <div class="full">
+            <label>Subject</label>
+            <input class="box" type="text" name="subject" required />
+          </div>
+          <div class="full">
+            <label>Message</label>
+            <textarea class="box" name="message"></textarea>
+          </div>
+          <div class="full">
+            <button class="box" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
